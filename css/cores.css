@@ -5,7 +5,8 @@
   --cor-fonte-padrao: #1D2635;
   --cor-fonte-placeholder: #49505B;
   --cor-botao: linear-gradient(180deg, #FF814A 0%, #FF611C 47.4%);
+  --cor-cards: linear-gradient(109deg, #A85ED4 9.51%, #D8987C 84.07%); 
+  --cor-sombra-cards: 10px 10px 10px 0px rgba(0, 0, 0, 0.15); 
   --cor-backgroung-form: #F5F5F5;
   --cor-sombra-form: 10px 10px 10px 0px rgba(0, 0, 0, 0.08); 
-  --cor-sombra-cards: 10px 10px 10px 0px rgba(0, 0, 0, 0.15); 
 }
