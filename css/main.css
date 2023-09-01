@@ -1,0 +1,12 @@
+main, .main-conteudo {
+  height: 100vh;
+}
+.main-conteudo {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
