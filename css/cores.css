@@ -1,0 +1,11 @@
+:root {
+  --cor-header: linear-gradient(90deg, #A85ED4 12.89%, #D8987C 58.17%);
+  --cor-fonte-destaque: #fff;
+  --cor-contraste: #1D2635;
+  --cor-fonte-padrao: #1D2635;
+  --cor-fonte-placeholder: #49505B;
+  --cor-botao: linear-gradient(180deg, #FF814A 0%, #FF611C 47.4%);
+  --cor-backgroung-form: #F5F5F5;
+  --cor-sombra-form: 10px 10px 10px 0px rgba(0, 0, 0, 0.08); 
+  --cor-sombra-cards: 10px 10px 10px 0px rgba(0, 0, 0, 0.15); 
+}
