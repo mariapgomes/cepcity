@@ -1,5 +1,6 @@
-main, .main-conteudo {
-  height: 100vh;
+.main-conteudo {
+  height: 100%;
+  /* padding: 60px 0; */
 }
 .main-conteudo {
   display: flex;

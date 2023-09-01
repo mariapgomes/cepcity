@@ -1,0 +1,9 @@
+footer {
+  text-align: center;
+  background: var(--cor-contraste);
+  margin: 0;
+}
+footer p {
+  line-height: 2rem;
+  color: var(--cor-fonte-destaque);
+}
