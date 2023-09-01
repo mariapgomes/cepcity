@@ -1,0 +1,32 @@
+header {
+  background: var(--cor-header);
+}
+.header-container-conteudo, .header-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cor-fonte-destaque);
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+.header-nav li {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+}
+.header-nav a {
+  color: var(--cor-fonte-destaque);
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-icon{
+  cursor: pointer;
+  padding: 16px;
+}
