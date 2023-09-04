@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+.conteudo-principal > div{
+  display: flex;
+  gap: 1.875rem;
+  justify-content: center;
+}
+
 h1 {
   text-align: center;
 }
