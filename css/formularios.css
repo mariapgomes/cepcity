@@ -1,3 +1,6 @@
+[data-busca="CEP"], [data-busca="Endereco"] {
+  display: none;
+}
 .form {
   min-width: 300px;
   background-color: var(--cor-backgroung-form);
