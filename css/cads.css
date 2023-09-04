@@ -2,6 +2,7 @@
   display: flex;
   gap: 1.875rem;
   flex-wrap: wrap;
+  flex: 0 0 375px;
 }
 .card {
   padding: 90px;
@@ -19,4 +20,8 @@
 }
 .card:hover {
   scale: 1.1;
+}
+
+h2 {
+  min-width: 400px;
 }

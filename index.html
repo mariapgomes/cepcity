@@ -31,9 +31,44 @@
       <div class="main-conteudo">
         <div class="conteudo-principal">
           <h1 class="font-1-xl mb-5">O que deseja fazer?</h1>
-          <div class="container-cards">
-            <h2 class="card font-2-xxl">Buscar CEPs a<br> partir do endereço</h2>
-            <h2 class="card font-2-xxl">Buscar endereços<br> a partir do CEP</h2>
+          <div>
+            <div class="container-cards">
+              <h2 class="card font-2-xxl">Buscar CEPs a<br> partir do endereço</h2>
+              <h2 class="card font-2-xxl">Buscar endereços<br> a partir do CEP</h2>
+            </div>
+            <form class="form">
+              <div class="cep">
+                <div class="input">
+                  <label for="" class="mb-1">CEP</label>
+                  <input type="number" required>
+                  <span>Somente números</span>
+                </div>
+                <button class="btn btn-submit px-3" type="submit">Buscar</button>
+              </div>
+  
+              <div class="input">
+                <label for="" class="mb-1">Logradouro</label>
+                  <input type="text">
+              </div>
+  
+              <div class="bairro-cidade-estado">
+                <div class="input">
+                  <label for="" class="mb-1">Bairro</label>
+                    <input type="text">
+                </div>
+    
+                <div class="input">
+                  <label for="" class="mb-1">Cidade</label>
+                    <input type="text">
+                </div>
+    
+                <div class="input">
+                  <label for="" class="mb-1">Estado</label>
+                    <input type="text">
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
