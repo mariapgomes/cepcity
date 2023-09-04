@@ -11,11 +11,14 @@
 .font-2-xl {
   font: 600 1.25rem "Roboto", sans-serif;
 }
-.font-2-l, .font-2-l-b {
+.font-2-l, .font-2-l-b, .font-2-l-c {
   font: 400 1rem "Roboto", sans-serif;
 }
 .font-2-l-b {
   font-weight: 500; 
+}
+.font-2-l-c {
+  font-size: .875rem;
 }
 .font-2-m {
   font: 400 0.875rem "Roboto", sans-serif;

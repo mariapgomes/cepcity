@@ -26,16 +26,21 @@
   color: var(--cor-fonte-destaque);
 }
 
-input {
+label {
+  color: var(--cor-fonte-padrao);
+}
+
+input, select {
   width: 100%;
   height: 35px;
   border: none;
   border-radius: .3125rem;
-  border: 1px solid transparent;
+  border: 1.5px solid transparent;
+  color: var(--cor-fonte-padrao);
 }
-input:active, input:focus {
+input:active, input:focus, select:active, select:focus {
   border-color: #FF611C;
-  box-shadow: 0px 0px 0px 2px #FFB595; 
+  box-shadow: 0px 0px 0px 1.5px #FFB595; 
 }/* ! NÃO ESTÁ ACEITANDO O ESTILO DE FOCO*/
 
 .bairro-cidade-estado {
@@ -48,3 +53,22 @@ input:active, input:focus {
   padding-top: 1.875rem;
 }
 
+
+/* Form busca por CEP */
+
+.submit-form-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.result-cep {
+  padding-top: 1.875rem;
+  border-top: 1px solid #D9D9D9;
+  padding-bottom: none;
+  border-bottom: none;
+}
+
+.estado {
+  background-color: var(--cor-fonte-destaque);
+}
