@@ -1,6 +1,3 @@
-[data-busca="CEP"], [data-busca="Endereco"] {
-  display: none;
-}
 .form {
   min-width: 300px;
   background-color: var(--cor-backgroung-form);
@@ -74,4 +71,28 @@ input:active, input:focus, select:active, select:focus {
 
 .estado {
   background-color: var(--cor-fonte-destaque);
+}
+
+/* Animações */
+
+[data-busca="CEP"], [data-busca="Endereco"] {
+  display: none;
+}
+.form-ativo {
+  display: block;
+}
+
+.form.form-ativo {
+  animation: mostrar .5s forwards;
+}
+@keyframes mostrar {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    z-index: -1;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
