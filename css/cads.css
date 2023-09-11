@@ -2,6 +2,7 @@
   display: flex;
   gap: 1.875rem;
   flex-wrap: wrap;
+  max-width: min-content;
   /* flex: 0 0 375px; */
 }
 .card {
@@ -24,4 +25,5 @@
 
 h2 {
   min-width: 400px;
+  white-space: nowrap;
 }
