@@ -2,9 +2,13 @@
   display: flex;
   gap: 1.875rem;
   flex-wrap: wrap;
-  max-width: min-content;
   /* flex: 0 0 375px; */
 }
+
+.posicao-cards {
+  max-width: min-content;
+}
+
 .card {
   padding: 90px;
   text-align: center;

@@ -1,6 +1,7 @@
 export default function mostraForm() {
 
   const cards = document.querySelectorAll('[data-card]'),
+        containerCards = document.querySelector('[data-container="cards"]'),
         formularios = document.querySelectorAll('[data-busca]'),
         formBuscaCep = document.querySelector('[data-busca="CEP"]'),
         formBuscaEndereco = document.querySelector('[data-busca="Endereco"]'),
@@ -10,6 +11,9 @@ export default function mostraForm() {
   
   function exibeForm(event) {
     const card = event.currentTarget.getAttribute('data-card');
+
+    containerCards.classList.add('posicao-cards');
+    
     formularios.forEach(card => card.classList.remove('form-ativo'));
     if(card === '1' || event.currentTarget === navCep) {
       titulo.innerText = 'Buscar por CEP';

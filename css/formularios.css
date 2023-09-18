@@ -1,4 +1,5 @@
 .form {
+  max-width: 697px;
   min-width: 300px;
   background-color: var(--cor-backgroung-form);
   padding: 2rem;
