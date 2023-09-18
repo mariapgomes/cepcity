@@ -10,6 +10,10 @@
   flex-direction: column;
 }
 
+.input span {
+  color: var(--cor-fonte-placeholder);
+}
+
 .cep, .bairro-cidade-estado {
   display: flex;
   justify-content: space-between;
@@ -36,6 +40,7 @@ input, select {
   border: none;
   border-radius: .3125rem;
   border: 1.5px solid transparent;
+  background-color: var(--cor-backgroung-inputs);
   color: var(--cor-fonte-padrao);
 }
 input:active, input:focus, select:active, select:focus {
@@ -64,13 +69,9 @@ input:active, input:focus, select:active, select:focus {
 
 .result-cep {
   padding-top: 1.875rem;
-  border-top: 1px solid #D9D9D9;
-  padding-bottom: none;
+  border-top: 1px solid var(--cor-divisoria);
+  padding-bottom: 0;
   border-bottom: none;
-}
-
-.estado {
-  background-color: var(--cor-fonte-destaque);
 }
 
 /* Animações */

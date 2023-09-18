@@ -27,6 +27,13 @@ header {
   gap: 1rem;
 }
 .header-icon{
+  width: 32px;
+  justify-content: center;
+  display: flex;
+}
+
+.container-icon {
+  width: 42px;
+  padding-left: 10px;
   cursor: pointer;
-  padding-left: 16px;
 }
