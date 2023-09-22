@@ -10,4 +10,4 @@ mostraEndereco;
 mostraCep;
 mostraForm();
 inicio();
-lightDark()
+lightDark();

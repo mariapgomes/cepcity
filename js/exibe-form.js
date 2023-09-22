@@ -2,9 +2,9 @@ export default function mostraForm() {
 
   const cards = document.querySelectorAll('[data-card]'),
         containerCards = document.querySelector('[data-container="cards"]'),
-        formularios = document.querySelectorAll('[data-busca]'),
-        formBuscaCep = document.querySelector('[data-busca="CEP"]'),
-        formBuscaEndereco = document.querySelector('[data-busca="Endereco"]'),
+        formularios = document.querySelectorAll('[data-form]'),
+        formBuscaCep = document.querySelector('[data-form="CEP"]'),
+        formBuscaEndereco = document.querySelector('[data-form="Endereco"]'),
         titulo = document.querySelector('[data-titulo="principal"]'),
         navCep = document.querySelector('[data-exibe="form-cep"]'),
         navEndereco = document.querySelector('[data-exibe="form-endereco"]');

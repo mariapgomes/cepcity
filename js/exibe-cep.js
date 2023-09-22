@@ -18,12 +18,27 @@ btnSubmit.addEventListener('click', buscaEndereco);
 function exibeCep(listaEnderecos) {
   const cep = document.querySelector('[data-input="CEP-resultado"]');
   const bairro = document.querySelector('[data-input="Bairro-cep"]').value.toLowerCase();
+  let qntEnderecosAnalisados = 0 
 
-  listaEnderecos.forEach(endereco => {
-    if (endereco.bairro.toLowerCase() === bairro){
-      cep.value = endereco.cep.replace('-','')
+  if(listaEnderecos > 0) {
+    listaEnderecos.forEach(endereco => {
+      if (endereco.bairro.toLowerCase() === bairro){
+        cep.value = endereco.cep.replace('-','')
+      } else {
+        qntEnderecosAnalisados += 1;
+      }
+    });
+  
+    if(qntEnderecosAnalisados === listaEnderecos.length) {
+      alert('Bairro Incorreto!');
     }
-  });
+    
+  } else {
+    alert(`Endereço Incorreto!
+      Digite o Logradouro completo e sem abreviações. 
+      Ex: Rua..., estrada..., doutor...
+    ` );
+  }
 }
 
 export const mostraCep = {

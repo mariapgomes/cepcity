@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.conteudo-principal {
+  position: relative;
+}
+
 .conteudo-principal > div{
   display: flex;
   gap: 1.875rem;

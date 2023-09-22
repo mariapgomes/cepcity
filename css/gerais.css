@@ -7,3 +7,19 @@ body {
   background-color: var(--cor-backgroung-body);
   color: var(--cor-fonte-padrao);
 }
+
+/* Alerta de erro */
+.alerta p {
+  margin-bottom: 0;
+}
+.alerta.desativado {
+  display: none !important;
+}
+.alerta {
+  margin-bottom: 0;
+  opacity: 0;
+  transition: .3s;
+}
+.alerta.ativo {
+  opacity: 1;
+}

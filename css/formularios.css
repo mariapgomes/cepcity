@@ -71,13 +71,13 @@ input:active, input:focus, select:active, select:focus {
 .result-cep {
   padding-top: 1.875rem;
   border-top: 1px solid var(--cor-divisoria);
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   border-bottom: none;
 }
 
 /* Animações */
 
-[data-busca="CEP"], [data-busca="Endereco"] {
+[data-form="CEP"], [data-form="Endereco"] {
   display: none;
 }
 .form-ativo {
