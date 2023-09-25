@@ -1,4 +1,5 @@
 import { conectaAPI } from "./conecta-api.js";
+import exibeErros from "./exibe-erros.js";
 
 const btnSubmit = document.querySelector('[data-buscar="cep"]');
 
@@ -19,25 +20,18 @@ function exibeCep(listaEnderecos) {
   const cep = document.querySelector('[data-input="CEP-resultado"]');
   const bairro = document.querySelector('[data-input="Bairro-cep"]').value.toLowerCase();
   let qntEnderecosAnalisados = 0 
+  console.table(listaEnderecos);
 
-  if(listaEnderecos > 0) {
-    listaEnderecos.forEach(endereco => {
-      if (endereco.bairro.toLowerCase() === bairro){
-        cep.value = endereco.cep.replace('-','')
-      } else {
-        qntEnderecosAnalisados += 1;
-      }
-    });
-  
-    if(qntEnderecosAnalisados === listaEnderecos.length) {
-      alert('Bairro Incorreto!');
+  listaEnderecos.forEach(endereco => {
+    if (endereco.bairro.toLowerCase() === bairro){
+      cep.value = endereco.cep.replace('-','');
+    } else {
+      qntEnderecosAnalisados += 1;
     }
-    
-  } else {
-    alert(`Endereço Incorreto!
-      Digite o Logradouro completo e sem abreviações. 
-      Ex: Rua..., estrada..., doutor...
-    ` );
+  });
+
+  if(qntEnderecosAnalisados === listaEnderecos.length) {
+    exibeErros(`<p>Bairro Incorreto! Tente novamente.</p>`, 'busca-cep');
   }
 }
 
