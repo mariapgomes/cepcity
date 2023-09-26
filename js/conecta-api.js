@@ -6,14 +6,18 @@ async function conectaAPIEndereco(cep) {
   try {
     const resposta = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
     const respostaConvertida = await resposta.json();
-    
+
     if(respostaConvertida.erro) {
-      throw Error('O CEP não existe! Tente novamente.');
+      throw new Error('O CEP não existe!');
     }
     mostraEndereco.exibeEndereco(respostaConvertida);
 
   } catch (error) {
-    exibeErros(`<p>Ocorreu um erro! Tente novamente.</p>`, 'busca-endereco');
+    if(error.message === 'O CEP não existe!') {
+      exibeErros('<p>O CEP não existe! Tente novamente.<p>', 'busca-endereco');
+    } else {
+      exibeErros(`<p>Ocorreu um erro! Tente novamente.</p>`, 'busca-endereco');
+    }
   }
 }
 
@@ -24,15 +28,19 @@ async function conectaAPICep(endereco) {
     
     console.log(resposta);
     console.log(respostaConvertida);
-    console.log(respostaConvertida.erro);
+    console.log(respostaConvertida.length === 0);
 
     if(respostaConvertida.length === 0) {
-      throw Error ('Endereço incorreto!');
+      throw new Error ('Endereço incorreto!');
     };
     mostraCep.exibeCep(respostaConvertida);
 
   } catch (error) {
-    exibeErros(`<p>Ocorreu um erro! Tente novamente.</p>`, 'busca-cep');
+    if(error.message === 'Endereço incorreto!') {
+      exibeErros('<p>Endereço incorreto! Digite o logradouro sem abreviações e confira o restante dos dados.</p>', 'busca-cep');
+    } else {
+      exibeErros(`<p>Ocorreu um erro! Tente novamente.</p>`, 'busca-cep');
+    }
   }
 }
 
