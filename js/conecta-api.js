@@ -25,10 +25,6 @@ async function conectaAPICep(endereco) {
   try {
     const resposta = await fetch(`http://viacep.com.br/ws/${endereco.estado}/${endereco.cidade}/${endereco.logradouro}/json/`);
     const respostaConvertida = await resposta.json();
-    
-    console.log(resposta);
-    console.log(respostaConvertida);
-    console.log(respostaConvertida.length === 0);
 
     if(respostaConvertida.length === 0) {
       throw new Error ('Endereço incorreto!');

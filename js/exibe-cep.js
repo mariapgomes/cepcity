@@ -1,7 +1,9 @@
 import { conectaAPI } from "./conecta-api.js";
 import exibeErros from "./exibe-erros.js";
+import novaPesquisa from "./nova-pesquisa-cep.js";
 
 const btnSubmit = document.querySelector('[data-buscar="cep"]');
+btnSubmit.addEventListener('click', buscaEndereco);
 
 function buscaEndereco(event) {
   event.preventDefault();
@@ -14,13 +16,10 @@ function buscaEndereco(event) {
   conectaAPI.conectaAPICep(endereco);
 }
 
-btnSubmit.addEventListener('click', buscaEndereco);
-
 function exibeCep(listaEnderecos) {
   const cep = document.querySelector('[data-input="CEP-resultado"]');
   const bairro = document.querySelector('[data-input="Bairro-cep"]').value.toLowerCase();
   let qntEnderecosAnalisados = 0 
-  console.table(listaEnderecos);
 
   listaEnderecos.forEach(endereco => {
     if (endereco.bairro.toLowerCase() === bairro){
@@ -32,6 +31,10 @@ function exibeCep(listaEnderecos) {
 
   if(qntEnderecosAnalisados === listaEnderecos.length) {
     exibeErros(`<p>Bairro Incorreto! Tente novamente.</p>`, 'busca-cep');
+  }
+  
+  if(cep.value !== '') {
+    novaPesquisa();
   }
 }
 
