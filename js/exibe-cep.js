@@ -1,6 +1,6 @@
 import { conectaAPI } from "./conecta-api.js";
 import exibeErros from "./exibe-erros.js";
-import novaPesquisa from "./nova-pesquisa-cep.js";
+import novaPesquisaCep from "./nova-pesquisa-cep.js";
 
 const btnSubmit = document.querySelector('[data-buscar="cep"]');
 btnSubmit.addEventListener('click', buscaEndereco);
@@ -34,7 +34,7 @@ function exibeCep(listaEnderecos) {
   }
   
   if(cep.value !== '') {
-    novaPesquisa();
+    novaPesquisaCep();
   }
 }
 

@@ -1,4 +1,5 @@
 import { conectaAPI } from "./conecta-api.js";
+import novaPesquisaEndereco from "./nova-pesquisa-endereco.js";
 
 const submit = document.querySelector('[data-buscar="Endereço"]');
 
@@ -20,6 +21,10 @@ function exibeEndereco(endereco) {
   bairro.value = endereco.bairro;
   cidade.value = endereco.localidade;
   estado.value = endereco.uf;
+
+  if(logradouro.value !== '') {
+    novaPesquisaEndereco();
+  }
 }
 
 submit.addEventListener('click', buscaCep);

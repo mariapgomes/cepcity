@@ -1,4 +1,4 @@
-export default function novaPesquisa () {
+export default function novaPesquisaCep () {
   const endereco = [
     document.querySelector('[data-input="Logradouro-cep"]'),
     document.querySelector('[data-input="Bairro-cep"]'),
