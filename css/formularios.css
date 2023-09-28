@@ -19,16 +19,24 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 1.875rem;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid var(--cor-divisoria);
   align-items: center;
 }
 
 .btn-submit {
   height: max-content;
   text-transform: uppercase;
-  background: var(--cor-botao);
   border: none;
+  background: var(--cor-botao);
   color: var(--cor-fonte-destaque);
+  transition: .5s;
+}
+.btn-submit:hover {
+  background: var(--cor-botao-hover);
+  color: var(--cor-fonte-destaque);
+}
+.btn-submit:focus {
+  box-shadow: none;
 }
 
 label {
@@ -45,9 +53,10 @@ input, select {
   color: var(--cor-fonte-padrao);
 }
 input:active, input:focus, select:active, select:focus {
+  outline: 0;
   border-color: #FF611C;
   box-shadow: 0px 0px 0px 1.5px #FFB595; 
-}/* ! NÃO ESTÁ ACEITANDO O ESTILO DE FOCO*/
+}
 
 .bairro-cidade-estado {
   gap: 1.25rem;
