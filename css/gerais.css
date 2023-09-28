@@ -16,6 +16,9 @@ body {
   display: none !important;
 }
 .alerta {
+  background: var(--cor-background-alerta);
+  color: var(--cor-fonte-alerta);
+  border-color: var(--cor-borda-alerta);
   margin-bottom: 0;
   opacity: 0;
   transition: .3s;

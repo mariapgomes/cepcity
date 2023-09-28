@@ -12,6 +12,9 @@
   --cor-sombra-form: 10px 10px 10px 0px rgba(0, 0, 0, 0.08); 
   --cor-divisoria: #D9D9D9;
   --cor-backgroung-inputs: #fff;
+  --cor-background-alerta: #f8d7da;
+  --cor-fonte-alerta: #58151c;
+  --cor-borda-alerta: #f1aeb5;
 }
 
 .dark-mode {
@@ -21,4 +24,7 @@
   --cor-backgroung-inputs: #3E3E3E;
   --cor-fonte-padrao: #fff;
   --cor-divisoria: #474747;
+  --cor-background-alerta: #2c0b0e;
+  --cor-fonte-alerta: #ea868f;
+  --cor-borda-alerta: #842029;
 }
