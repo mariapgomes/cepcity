@@ -7,14 +7,16 @@ export default function mostraForm() {
         formBuscaEndereco = document.querySelector('[data-form="Endereco"]'),
         titulo = document.querySelector('[data-titulo="principal"]'),
         navCep = document.querySelector('[data-exibe="form-cep"]'),
-        navEndereco = document.querySelector('[data-exibe="form-endereco"]');
+        navEndereco = document.querySelector('[data-exibe="form-endereco"]'),
+        inputs = document.querySelectorAll('input');
   
   function exibeForm(event) {
     const card = event.currentTarget.getAttribute('data-card');
 
-    containerCards.classList.add('posicao-cards');
-    
     formularios.forEach(card => card.classList.remove('form-ativo'));
+    inputs.forEach(input => input.value = '');
+    containerCards.classList.add('posicao-cards');
+
     if(card === '1' || event.currentTarget === navCep) {
       titulo.innerText = 'Buscar por CEP';
       formBuscaCep.classList.add('form-ativo');
