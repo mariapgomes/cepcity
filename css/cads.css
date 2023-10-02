@@ -27,7 +27,56 @@
   scale: 1.1;
 }
 
+.oculta-card {
+  display: none;
+}
+
 h2 {
   min-width: 400px;
   white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    padding: 65px;
+  }
+}
+@media (max-width: 770px) {
+  .container-cards {
+    flex-wrap: wrap;
+  }
+  .posicao-cards {
+    max-width: max-content;
+  }
+  .card {
+    padding: 40px;
+    font-size: 20px;
+  }
+  .card:hover {
+    scale: 1.02;
+  }
+}
+@media (max-width: 580px) {
+  .container-cards {
+    /* flex-direction: column; */
+  }
+  .posicao-cards {
+    /* max-width: min-content; */
+  }
+  .card {
+    padding: 20px 30px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .container-cards {
+    flex-direction: column;
+  }
+  .posicao-cards {
+    max-width: min-content;
+  }
+  .card {
+    /* padding: 20px 60px; */
+    /* font-size: 18px; */
+  }
 }

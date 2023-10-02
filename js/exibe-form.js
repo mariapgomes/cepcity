@@ -24,6 +24,10 @@ export default function mostraForm() {
       titulo.innerText = 'Buscar por Endereços';
       formBuscaEndereco.classList.add('form-ativo');
     }
+
+    if (window.innerWidth <= 480 && formBuscaCep.classList.contains('form-ativo') || window.innerWidth <= 480 && formBuscaEndereco.classList.contains('form-ativo')) {
+      containerCards.classList.add('oculta-card');
+    }
   }
   
   cards.forEach(card => {card.addEventListener('click', exibeForm)});

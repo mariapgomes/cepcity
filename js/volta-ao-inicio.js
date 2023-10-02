@@ -13,6 +13,7 @@ export default function inicio() {
       inputs.forEach(input => input.value = '');
     });
     containerCards.classList.remove('posicao-cards');
+    containerCards.classList.remove('oculta-card');
   }
 
   logo.addEventListener('click', voltaAoInicio);

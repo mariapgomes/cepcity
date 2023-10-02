@@ -21,3 +21,16 @@
 h1 {
   text-align: center;
 }
+
+@media (max-width: 770px) {
+  .conteudo-principal > div{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  h1.mb-5 {
+    font-size: 26px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 2.25rem !important;
+  }
+}

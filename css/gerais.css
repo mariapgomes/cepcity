@@ -26,3 +26,12 @@ body {
 .alerta.ativo {
   opacity: 1;
 }
+
+@media (max-width: 450px) {
+  .logo {
+    font-size: 1.625rem;
+  }
+  .header-nav a {
+    font-size: 1rem;
+  }
+}
