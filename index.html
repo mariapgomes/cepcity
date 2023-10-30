@@ -9,9 +9,9 @@
 </head>
 <body>
   <header>
-    <div class="header-container-conteudo container p-3">
+    <div class="header-container-conteudo p-3" data-container="menu">
       <a href="#" class="logo font-1-xl" data-link="logo">cepcity</a>
-      <div class="header-menu">
+      <div class="header-menu" data-menu>
         <ul class="header-nav">
           <li><a href="#" class="px-3 py-2 font-2-xl" data-exibe="form-cep">CEPs</a></li>
           <li><a href="#" class="px-3 py-2 font-2-xl" data-exibe="form-endereco">Endereços</a></li>
@@ -25,6 +25,13 @@
           </div>
         </div>
       </div>
+      <button class="btn-menu" data-btn="mobile">
+        <div>
+          <span class="menu-hamburguer"></span>
+          <span class="menu-hamburguer"></span>
+          <span class="menu-hamburguer"></span>
+        </div>
+      </button>
     </div>
   </header>
 

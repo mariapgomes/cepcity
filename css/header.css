@@ -1,6 +1,10 @@
 header {
   background: var(--cor-header);
 }
+.header-container-conteudo {
+  max-width: 1296px;
+  margin: 0 auto;
+}
 .header-container-conteudo, .header-nav {
   display: flex;
   gap: 1rem;
