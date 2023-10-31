@@ -1,17 +1,18 @@
 export default function novaPesquisaCep () {
-  const endereco = [
-    document.querySelector('[data-input="Logradouro-cep"]'),
-    document.querySelector('[data-input="Bairro-cep"]'),
-    document.querySelector('[data-input="Cidade-cep"]'),
-    document.querySelector('[data-input="Estado-cep"]')
-  ];
-  const cep = document.querySelector('[data-input="CEP-resultado"]');
+  const endereco = document.querySelectorAll('[data-input]'),
+        cep = document.querySelector('[data-input="CEP-resultado"]'),
+        seletorNumero = document.querySelector('#numero'),
+        containerSeletor = document.querySelector('.selecao-numero');
   
+  function limpaResultado(event) {
+    cep.value = '';
+
+    if (seletorNumero !== null && seletorNumero !== event.currentTarget) {
+      containerSeletor.remove();
+    }
+  }
+
   endereco.forEach(dado => {
     dado.addEventListener('focus', limpaResultado);
   });
-  
-  function limpaResultado() {
-    cep.value = '';
-  }
 }

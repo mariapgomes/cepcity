@@ -4,7 +4,7 @@ import inicio from "./volta-ao-inicio.js";
 import { conectaAPI } from "./conecta-api.js";
 import { mostraEndereco } from "./exibe-endereco.js";
 import { mostraCep } from "./exibe-cep.js";
-import iniciaMenuMobile from "./menu-mobile.js"
+import iniciaMenuMobile from "./menu-mobile.js";
 
 lightDark();
 iniciaMenuMobile();

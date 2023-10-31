@@ -76,8 +76,6 @@ function exibeCep(listaEnderecos) {
     })
   }
 
-  console.log(enderecosFiltrados);
-
   if(qntEnderecosAnalisados === listaEnderecos.length) {
     exibeErros(`<p>Bairro Incorreto! Tente novamente.</p>`, 'busca-cep');
   }
@@ -94,11 +92,12 @@ function criaSelecao(listaEnderecos) {
   const containerResultado = document.createElement('div');
   containerResultado.classList.add('selecao-numero')
   containerResultado.innerHTML += `<label for="" class="mb-1 font-2-l">O número do endereço é:</label>
-                                      <select id="numero" name="numero" class="estado" required data-input="Estado-cep">
+                                      <select id="numero" name="numero" class="estado" required data-input="numero">
 
                                       </select>`;
 
   form.insertBefore(containerResultado, btn);
+  novaPesquisaCep()
 
   const select = document.querySelector('#numero');
   listaEnderecos.forEach(enderecos => {
