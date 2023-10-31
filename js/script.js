@@ -13,3 +13,6 @@ inicio();
 conectaAPI;
 mostraEndereco;
 mostraCep;
+
+// !FAZER A PESQUISA POR SUBMIT E NÃO POR CLICK
+// !CRIAR FILTRO DE BUSCA POR NÚMERO PARA SELECIONAR 1 ENDEREÇO

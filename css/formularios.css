@@ -22,6 +22,9 @@
   border-bottom: 1px solid var(--cor-divisoria);
   align-items: center;
 }
+.selecao-numero {
+  padding-bottom: 1.875rem;
+}
 
 .btn-submit {
   height: max-content;
