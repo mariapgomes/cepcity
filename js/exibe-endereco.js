@@ -1,7 +1,7 @@
 import { conectaAPI } from "./conecta-api.js";
 import novaPesquisaEndereco from "./nova-pesquisa-endereco.js";
 
-const submit = document.querySelector('[data-buscar="Endereço"]');
+const form = document.querySelector('[data-form="Endereco"]')
 
 function buscaCep(event) {
   event.preventDefault();
@@ -27,7 +27,7 @@ function exibeEndereco(endereco) {
   }
 }
 
-submit.addEventListener('click', buscaCep);
+form.addEventListener('submit', buscaCep);
 
 export const mostraEndereco = {
   buscaCep,

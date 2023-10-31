@@ -2,8 +2,8 @@ import { conectaAPI } from "./conecta-api.js";
 import exibeErros from "./exibe-erros.js";
 import novaPesquisaCep from "./nova-pesquisa-cep.js";
 
-const btnSubmit = document.querySelector('[data-buscar="cep"]');
-btnSubmit.addEventListener('click', buscaEndereco);
+const form = document.querySelector('[data-form="CEP"]');
+form.addEventListener('submit', buscaEndereco);
 
 function buscaEndereco(event) {
   event.preventDefault();
@@ -97,7 +97,7 @@ function criaSelecao(listaEnderecos) {
                                       </select>`;
 
   form.insertBefore(containerResultado, btn);
-  novaPesquisaCep()
+  // novaPesquisaCep()
 
   const select = document.querySelector('#numero');
   listaEnderecos.forEach(enderecos => {
