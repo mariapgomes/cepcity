@@ -26,30 +26,22 @@ function exibeCep(listaEnderecos) {
   if(numero === null && listaEnderecos.length > 1) {
 
     listaEnderecos.forEach(endereco => {
-    
       if (endereco.bairro.toLowerCase() === bairro){
         bairrosExistentes += 1;
       } else {
         qntEnderecosAnalisados += 1;
       }
-
     })
 
     if (bairrosExistentes === 1) {
       listaEnderecos.forEach(endereco => {
-    
         if (endereco.bairro.toLowerCase() === bairro){
           cep.value = endereco.cep.replace('-','');
         }
       })
 
     } else if (bairrosExistentes > 1) {
-      const enderecosFiltrados =  listaEnderecos.map(endereco => {
-                              if (endereco.bairro.toLowerCase() === bairro) {
-                                return endereco;
-                              }
-                            });
-
+      const enderecosFiltrados = listaEnderecos.filter(endereco => endereco.bairro.toLowerCase() === bairro);
       criaSelecao(enderecosFiltrados);
 
     } else if (bairrosExistentes === listaEnderecos.length) {
@@ -57,9 +49,7 @@ function exibeCep(listaEnderecos) {
     }
     
   } else if (numero !== null && listaEnderecos.length > 1) {
-
     listaEnderecos.forEach(endereco => {
-
       if (endereco.bairro.toLowerCase() === bairro && endereco.complemento === numero.value){
         cep.value = endereco.cep.replace('-','');
       }
@@ -67,7 +57,6 @@ function exibeCep(listaEnderecos) {
 
   } else {
     listaEnderecos.forEach(endereco => {
-      
       if (endereco.bairro.toLowerCase() === bairro){
         cep.value = endereco.cep.replace('-','');
       } else {
@@ -109,4 +98,3 @@ export const mostraCep = {
   buscaEndereco,
   exibeCep
 }
-
