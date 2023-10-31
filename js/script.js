@@ -6,13 +6,10 @@ import { mostraEndereco } from "./exibe-endereco.js";
 import { mostraCep } from "./exibe-cep.js";
 import iniciaMenuMobile from "./menu-mobile.js"
 
-iniciaMenuMobile();
 lightDark();
+iniciaMenuMobile();
 mostraForm();
 inicio();
 conectaAPI;
 mostraEndereco;
 mostraCep;
-
-// !FAZER A PESQUISA POR SUBMIT E NÃO POR CLICK
-// !CRIAR FILTRO DE BUSCA POR NÚMERO PARA SELECIONAR 1 ENDEREÇO
