@@ -50,19 +50,19 @@
               
               <div class="input">
                 <label for="" class="mb-1 font-2-l">Logradouro</label>
-                <input type="text" required class="font-2-l" data-input="Logradouro-cep">
+                <input type="text" required class="font-2-l" data-input="Logradouro-cep" minlength="4">
                 <span class="font-2-l-c">(Estrada, avenida, rua)</span>
               </div>
               
               <div class="bairro-cidade-estado">
                 <div class="input">
                   <label for="" class="mb-1 font-2-l">Bairro</label>
-                  <input type="text" required class="font-2-l" data-input="Bairro-cep">
+                  <input type="text" required class="font-2-l" data-input="Bairro-cep" minlength="3">
                 </div>
                 
                 <div class="input">
                   <label for="" class="mb-1 font-2-l">Cidade</label>
-                  <input type="text" required class="font-2-l" data-input="Cidade-cep">
+                  <input type="text" required class="font-2-l" data-input="Cidade-cep" minlength="4">
                 </div>
                 
                 <div class="input">
@@ -120,8 +120,8 @@
               <div class="cep">
                 <div class="input">
                   <label for="" class="mb-1 font-2-l">CEP</label>
-                  <input type="text" required class="font-2-l" data-input="CEP">
-                  <span class="font-2-l-c">Somente números</span>
+                  <input type="text" required class="font-2-l" data-input="CEP" pattern="\d{8}">
+                  <span class="font-2-l-c" data-sapan="cep">Somente números</span>
                 </div>
                 <button class="btn btn-submit px-3 font-2-l-b" type="submit" data-buscar="Endereço">Buscar</button>
               </div>

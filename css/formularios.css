@@ -158,3 +158,12 @@ input:active, input:focus, select:active, select:focus {
     margin: 0 auto;
   }
 }
+
+/* Validações */
+
+.erro-border {
+  border-color: red;
+}
+.erro-color {
+  color: red !important;
+}
