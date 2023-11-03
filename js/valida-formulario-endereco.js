@@ -1,6 +1,6 @@
 export default function validaFormularioEndereco() {
   const campoCep = document.querySelector('[data-input="CEP"]'),
-        spanCep = document.querySelector('[data-sapan="cep"]');
+        spanCep = document.querySelector('[data-span="cep"]');
   
   function validaCampo() {
     if(campoCep.value.includes('.') || campoCep.value.includes('-')){
