@@ -1,0 +1,36 @@
+.main-conteudo {
+  height: 100%;
+  /* padding: 60px 0; */
+}
+.main-conteudo {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+.conteudo-principal {
+  position: relative;
+}
+
+.conteudo-principal > div{
+  display: flex;
+  gap: 1.875rem;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (max-width: 770px) {
+  .conteudo-principal > div{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  h1.mb-5 {
+    font-size: 26px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 2.25rem !important;
+  }
+}

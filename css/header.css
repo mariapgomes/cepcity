@@ -1,0 +1,43 @@
+header {
+  background: var(--cor-header);
+}
+.header-container-conteudo {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.header-container-conteudo, .header-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cor-fonte-destaque);
+}
+.header-container-conteudo a {
+  color: var(--cor-fonte-destaque);
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+.header-nav li {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-icon{
+  width: 32px;
+  justify-content: center;
+  display: flex;
+}
+
+.container-icon {
+  width: 42px;
+  padding-left: 10px;
+  cursor: pointer;
+}
