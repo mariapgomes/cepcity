@@ -4,7 +4,7 @@ import exibeErros from "./exibe-erros.js";
 
 async function conectaAPIEndereco(cep) {
   try {
-    const resposta = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
+    const resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
     const respostaConvertida = await resposta.json();
 
     if(respostaConvertida.erro) {
@@ -23,7 +23,7 @@ async function conectaAPIEndereco(cep) {
 
 async function conectaAPICep(endereco) {
   try {
-    const resposta = await fetch(`http://viacep.com.br/ws/${endereco.estado}/${endereco.cidade}/${endereco.logradouro}/json/`);
+    const resposta = await fetch(`https://viacep.com.br/ws/${endereco.estado}/${endereco.cidade}/${endereco.logradouro}/json/`);
     const respostaConvertida = await resposta.json();
 
     if(respostaConvertida.length === 0) {

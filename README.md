@@ -1,6 +1,6 @@
 # CEPCity
 
-Buscador que simplifica a busca por informações precisas sobre CEPs e endereços em todo o Brasil. Fornece os dados necessários de forma rápida e confiável. Descubra como ele funciona e faça a sua busca clicando aqui. 
+Buscador que simplifica a busca por informações precisas sobre CEPs e endereços em todo o Brasil. Fornece os dados necessários de forma rápida e confiável. Descubra como ele funciona e faça a sua busca clicando [aqui](https://cepcity.netlify.app/). 
 
 ## Imagens
 ![Tela inicial do buscador](./img/inicio-modo-light.png)
