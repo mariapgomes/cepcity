@@ -38,12 +38,13 @@ h2 {
 
 @media (max-width: 1000px) {
   .card {
-    padding: 65px;
+    padding: 55px;
   }
 }
 @media (max-width: 770px) {
   .container-cards {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .posicao-cards {
     max-width: max-content;
@@ -57,12 +58,6 @@ h2 {
   }
 }
 @media (max-width: 580px) {
-  .container-cards {
-    /* flex-direction: column; */
-  }
-  .posicao-cards {
-    /* max-width: min-content; */
-  }
   .card {
     padding: 20px 30px;
     font-size: 18px;
@@ -74,9 +69,5 @@ h2 {
   }
   .posicao-cards {
     max-width: min-content;
-  }
-  .card {
-    /* padding: 20px 60px; */
-    /* font-size: 18px; */
   }
 }
