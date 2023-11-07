@@ -6,7 +6,9 @@ export default function novaPesquisaEndereco () {
   
   function limpaResultado() {
     endereco.forEach(campo => {
-      campo.value = '';
+      if(campo !== cep) {
+        campo.value = '';
+      }
     });
   }
 }
