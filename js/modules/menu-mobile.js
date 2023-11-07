@@ -4,11 +4,10 @@ export default function iniciaMenuMobile() {
   
   const btnMenu = document.querySelector('[data-btn="mobile"]'),
         animaBtn = document.querySelectorAll('.menu-hamburguer'),
-        menu = document.querySelector('[data-menu]'),
-        eventos = ['click', 'touchstart'];
+        menu = document.querySelector('[data-menu]');
   
-  eventos.forEach(evento => btnMenu.addEventListener(evento, abreMenu));
-  
+  btnMenu.addEventListener('click', abreMenu)
+
   function abreMenu() {
 
     setTimeout(() => {
@@ -18,7 +17,7 @@ export default function iniciaMenuMobile() {
     },200);
     menu.classList.add('ativo');
 
-    detectaClickFora(menu, ['touchstart', 'click'], () => {
+    detectaClickFora(menu, () => {
       
       menu.classList.add('anima-menu');
       

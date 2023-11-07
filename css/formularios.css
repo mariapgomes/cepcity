@@ -164,6 +164,9 @@ input:active, input:focus, select:active, select:focus {
   .btn-submit {
     margin: 0 auto;
   }
+  .form {
+    width: 236px;
+  }
 }
 
 /* Validações */
