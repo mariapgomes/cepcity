@@ -1,21 +1,18 @@
-export default function detectaClickFora(element, events, callback) {
+export default function detectaClickFora(element, callback) {
   const html = document.documentElement,
         jaAtivo = 'data-ativo';
 
   if(!element.hasAttribute(jaAtivo)) {
-    events.forEach(event => {
-      setTimeout(() => html.addEventListener(event, clickFora));
-    })
+    
+    setTimeout(() => html.addEventListener('click', clickFora));
     element.setAttribute(jaAtivo, '');
   }
 
   function clickFora(event) {
     if(!element.contains(event.target)) {
+      
       element.removeAttribute(jaAtivo);
-
-      events.forEach(event => {
-        html.removeEventListener(event, clickFora);
-      })
+      html.removeEventListener('click', clickFora);
       callback();
     }
   }
